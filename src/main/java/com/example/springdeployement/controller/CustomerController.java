@@ -15,8 +15,5 @@ public class CustomerController {
     @Autowired
     public CustomerServiceImpl customerServiceImpl;
 
-    @GetMapping
-    public List<Customer> findAll() {
-        return customerServiceImpl.fin
-    }
+
 }

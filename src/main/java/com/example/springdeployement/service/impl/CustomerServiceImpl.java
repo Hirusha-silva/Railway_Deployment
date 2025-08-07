@@ -30,7 +30,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public Customer updateCustomer(Customer customer) {
-        Customer customerById =  customerRepo.findById(customer.getId()).get();
+        Customer customerById =  customerRepo.getCustomerById(customer.getId());
         customerById.setName(customer.getName());
         customerById.setAge(customer.getAge());
         customerRepo.save(customerById);
